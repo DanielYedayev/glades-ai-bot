@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: glades-ai-bot
+    env: python
+    plan: free
+    buildCommand: pip3 install -r requirements.txt
+    startCommand: python3 main.py
